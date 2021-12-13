@@ -30,10 +30,9 @@ async def cbstart(_, query: CallbackQuery):
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
                 [
                     InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤ Donate", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse"),
                 ],
                 [
                     InlineKeyboardButton(
@@ -45,7 +44,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/video-stream"
+                        "🌐 Source Code", url="https://t.me/fuckinzero13"
                     )
                 ],
             ]
@@ -72,7 +71,7 @@ async def cbguides(_, query: CallbackQuery):
 
 ⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")]]
+            [[InlineKeyboardButton("🔙", callback_data="cbstart")]]
         ),
     )
 
@@ -93,7 +92,7 @@ async def cbcmds(_, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton("📚 Basic Cmd", callback_data="cbbasic")
                 ],[
-                    InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")
+                    InlineKeyboardButton("🔙", callback_data="cbstart")
                 ],
             ]
         ),
@@ -120,7 +119,7 @@ async def cbbasic(_, query: CallbackQuery):
 
 ⚡️ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙", callback_data="cbcmds")]]
         ),
     )
 
@@ -143,7 +142,7 @@ async def cbadmin(_, query: CallbackQuery):
 
 ⚡️ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙", callback_data="cbcmds")]]
         ),
     )
 
@@ -161,7 +160,7 @@ async def cbsudo(_, query: CallbackQuery):
 
 ⚡ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙", callback_data="cbcmds")]]
         ),
     )
 
